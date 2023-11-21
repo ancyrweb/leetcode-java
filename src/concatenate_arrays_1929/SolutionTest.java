@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
   @Test
-  void test1234() {
+  void test_1234() {
     Solution solution = new Solution();
     int[] initial = new int[]{1, 2, 3, 4};
     int[] expected = new int[]{1, 2, 3, 4, 1, 2, 3, 4};
@@ -16,7 +16,7 @@ class SolutionTest {
   }
 
   @Test
-  void test121() {
+  void test_121() {
     Solution solution = new Solution();
     int[] initial = new int[]{1, 2, 1};
     int[] expected = new int[]{1, 2, 1, 1, 2, 1};

@@ -2,7 +2,7 @@ package container_with_most_water_11;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class SolutionTest {
   @Test

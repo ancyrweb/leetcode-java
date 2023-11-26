@@ -1,6 +1,51 @@
 package number_of_islands_200
 
+import java.util.*
+
 class Solution {
+  fun numIslands_bfs(grid: Array<CharArray>): Int {
+    val directions: Array<Pair<Int, Int>> = arrayOf(Pair(-1, 0), Pair(1, 0), Pair(0, -1), Pair(0, 1))
+
+    val ROWS = grid.size
+    val COLS = grid[0].size
+    var count = 0
+
+    fun bfs(row: Int, col: Int) {
+      val queue: Queue<Pair<Int, Int>> = LinkedList()
+      queue.add(Pair(row, col))
+
+      while (!queue.isEmpty()) {
+        val p = queue.remove()
+        grid[p.first][p.second] = '0'
+
+        for (dir in directions) {
+          val nextRow = p.first + dir.first
+          val nextCol = p.second + dir.second
+
+          if (
+            nextRow >= 0 && nextCol >= 0 &&
+            nextRow < ROWS && nextCol < COLS &&
+            grid[nextRow][nextCol] == '1'
+          ) {
+            queue.add(Pair(nextRow, nextCol))
+          }
+        }
+      }
+    }
+
+    grid.forEachIndexed { row, chars ->
+      chars.forEachIndexed { col, character ->
+        if (character == '1') {
+          bfs(row, col)
+          count++
+        }
+      }
+    }
+
+    return count
+  }
+
+
   fun numIslands_dfs(grid: Array<CharArray>): Int {
     val ROWS = grid.size
     val COLS = grid[0].size
@@ -82,7 +127,7 @@ class Solution {
   }
 
   fun numIslands(grid: Array<CharArray>): Int {
-    return numIslands_dfs(grid)
+    return numIslands_bfs(grid)
   }
 }
 

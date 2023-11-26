@@ -1,4 +1,4 @@
-package design_hashet_705
+package design_hashmap_706
 
 class MyHashMap {
   class Bucket {

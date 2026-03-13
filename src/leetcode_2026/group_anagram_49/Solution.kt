@@ -1,4 +1,4 @@
-package leetcode_2025.group_anagram_49
+package leetcode_2026.group_anagram_49
 
 class Solution {
   fun groupAnagrams(strs: Array<String>): List<List<String>> {

@@ -1,4 +1,4 @@
-package leetcode_2025.group_anagram_49
+package leetcode_2026.group_anagram_49
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test

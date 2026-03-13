@@ -1,4 +1,4 @@
-package leetcode_2025.valid_anagram_242
+package leetcode_2026.valid_anagram_242
 
 class Solution {
   fun isAnagram(s: String, t: String): Boolean {

@@ -1,4 +1,4 @@
-package leetcode_2025.two_sum_1
+package leetcode_2026.two_sum_1
 
 import org.junit.jupiter.api.Assertions.assertArrayEquals
 import org.junit.jupiter.api.Test

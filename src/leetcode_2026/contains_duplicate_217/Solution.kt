@@ -1,4 +1,4 @@
-package leetcode_2025.contains_duplicate_217
+package leetcode_2026.contains_duplicate_217
 
 class Solution {
   fun containsDuplicate(nums: IntArray): Boolean {

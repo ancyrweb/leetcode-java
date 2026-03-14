@@ -26,8 +26,7 @@ class Solution {
     for ((num, count) in countMap) {
       frequenciesList[count].add(num)
     }
-
-
+    
     val out = mutableListOf<Int>()
 
     // Now the frequencies are sorted from lowest frequency to highest.

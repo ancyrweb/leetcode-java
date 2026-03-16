@@ -58,7 +58,7 @@ class MinQueue {
 
       // Check right children first
       if (
-        rightChildren < arr.size &&
+        rightChildren < arr.size - 1 &&
         arr[rightChildren] < arr[i] &&
         arr[rightChildren] < arr[leftChildren]
       ) {
@@ -70,7 +70,7 @@ class MinQueue {
       }
       // Then check left children
       else if (
-        leftChildren < arr.size &&
+        leftChildren < arr.size - 1 &&
         arr[leftChildren] < arr[i]
       ) {
         val temp = arr[i]

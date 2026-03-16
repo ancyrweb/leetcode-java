@@ -45,6 +45,16 @@ class MaxQueueTests {
     assertArrayEquals(intArrayOf(100, 50, 25, 5), out)
   }
 
+
+  @Test
+  fun heapify() {
+    val queue = MaxQueue()
+    queue.heapify(intArrayOf(5, 50, 25, 100, 200))
+    val out = popAll(queue)
+
+    assertArrayEquals(intArrayOf(200, 100, 50, 25, 5), out)
+  }
+
   private fun pushAll(queue: MaxQueue, list: IntArray) {
     for (i in list) {
       queue.push(i)
